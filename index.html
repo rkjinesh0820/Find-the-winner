@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar"></div>
+      <h1 class="heading">Find the Winner</h1>
+      <div class="contant">
+        <div class="left box">
+          <div class="">
+            <h3 class="subheading">ADD NAMES</h3>
+            <input type="text" id="myText" />
+          </div>
+          <button onclick="addNames()">Add</button>
+          <button onclick="removeNames()">Remove</button>
+        </div>
+        <div class="right box">
+          <div class="">
+            <h2 class="subheading">Fine the winner</h2>
+            <p id="winner-para"></p>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <button onclick="findWinner()">Find Winner</button>
+      </div>
+      <div class="nameList">
+        <p>Participance</p>
+        <p id="showName"></p>
+      </div>
+    </div>
+
+    <script>
+      var output = [];
+      function addNames() {
+        var inputvalue = document.getElementById("myText").value;
+        var p = (document.getElementById("showName").innerHTML =
+          inputvalue + " " + output);
+        output.push(inputvalue);
+        return output;
+      }
+
+      function findWinner() {
+        var num = Math.random() * output.length;
+        var rNum = Math.floor(num);
+
+        console.log(output[rNum]);
+        document.getElementById("winner-para").innerHTML =
+          "Congratulations " + output[rNum];
+      }
+
+      function removeNames() {
+        var inputvalue = document.getElementById("myText").value;
+        var p = (document.getElementById("showName").innerHTML =
+          inputvalue + " " + output);
+
+        output.pop(inputvalue);
+        //console.log(output);
+      }
+    </script>
+  </body>
+</html>
+`

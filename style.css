@@ -1,0 +1,142 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Lucky_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient();
+}
+
+.heading {
+  padding-top: 50px;
+  font-size: 50px;
+  color: goldenrod;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contant {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.box {
+  width: 45%;
+  height: 150px;
+  background-color: rgb(196, 199, 186);
+}
+.btn {
+  text-align: center;
+  border-radius: 20%;
+}
+
+.btn button {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+  width: 100px;
+  height: 35px;
+  border-radius: 10%;
+  background-color: rgb(223, 238, 169);
+  border: 2px solid gold;
+  color: rgb(3, 51, 11);
+  cursor: pointer;
+}
+
+.left button {
+  color: red;
+  margin-top: 30px;
+  padding: 3px 20px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left {
+  position: relative;
+  text-align: center;
+}
+
+.left h2 {
+  margin: 5px;
+}
+.right h2 {
+  text-align: center;
+}
+.dddd {
+  color: red;
+}
+
+.input-box {
+  padding: 20px;
+  border: 2px solid gold;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nameList {
+  width: 90%;
+  height: 200px;
+  background-color: black;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nameList p {
+  padding-top: 20px;
+}
+#winner-para {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  color: red;
+}
+
+#showName {
+  font-size: 25px;
+  color: white;
+}
+.nameList > p {
+  color: white;
+  font-size: 18px;
+}
+.subheading {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .left input {
+    width: 60%;
+  }
+  button {
+    width: 40%;
+    font-size: 6px;
+  }
+
+  #winner-para {
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .subheading {
+    font-size: 15px;
+  }
+  #showName {
+    font-size: 15px;
+    color: white;
+  }
+}
